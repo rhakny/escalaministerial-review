@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <style>
+      .purple-solid { fill: #8B5CF6; }
+      .gold-solid { fill: #FBBF24; }
+    </style>
+  </defs>
+
+  <!-- Container Geral -->
+  <g transform="translate(0, 0)">
+
+    <!-- Corpo do Calendário -->
+    <rect x="64" y="64" width="384" height="384" rx="64" fill="white" stroke="#8B5CF6" stroke-width="32" />
+    
+    <!-- Barra Superior -->
+    <path d="M64 160 Q64 96 128 96 L384 96 Q448 96 448 160 L448 180 L64 180 Z" class="purple-solid" />
+
+    <!-- Argolas -->
+    <rect x="144" y="32" width="48" height="96" rx="24" class="purple-solid" />
+    <rect x="320" y="32" width="48" height="96" rx="24" class="purple-solid" />
+    
+    <!-- Grade (Linhas Centrais) -->
+    <g stroke="#8B5CF6" stroke-width="24" stroke-linecap="round">
+        <line x1="192" y1="240" x2="192" y2="390" />
+        <line x1="320" y1="240" x2="320" y2="390" />
+        <line x1="128" y1="280" x2="384" y2="280" />
+        <line x1="128" y1="360" x2="384" y2="360" />
+    </g>
+
+    <!-- CRUZ DOURADA -->
+    <g filter="drop-shadow(0px 8px 4px rgba(0,0,0,0.15))">
+        <!-- Vertical -->
+        <rect x="236" y="220" width="40" height="180" rx="12" class="gold-solid" />
+        <!-- Horizontal -->
+        <rect x="190" y="280" width="132" height="40" rx="12" class="gold-solid" />
+    </g>
+    
+    <!-- Detalhe "Notificação" -->
+    <rect x="340" y="235" width="45" height="45" rx="12" class="purple-solid" opacity="0.4" />
+  
+  </g>
+</svg>
